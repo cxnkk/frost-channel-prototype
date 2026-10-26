@@ -1,0 +1,15 @@
+[package]
+name = "frost-channel-prototype"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "A small mTLS peer channel prototype for testing FROST DKG transport"
+
+[dependencies]
+tokio = { version = "1.49.0", features = ["full"] }
+frost-secp256k1-tr = { version = "3.0.0" }
+tokio-rustls = "0.26"
+rustls-pemfile = "2"
+x509-parser = "0.18"
+rand_core = { version = "0.6", features = ["getrandom"] }
+
